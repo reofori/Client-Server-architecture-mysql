@@ -107,7 +107,6 @@ bind-address = 0.0.0.0
 ```bash
 sudo mysql -u root
 ```
-![instance](imagessh5.png)
 
 2. Inside the MySQL shell:
 ```sql
@@ -116,13 +115,14 @@ GRANT ALL PRIVILEGES ON *.* TO 'remote_user'@'%';
 FLUSH PRIVILEGES;
 EXIT;
 ```
-![](img/mysql.png)
+![instance](images/ssh5.png)
+
 
 3. Restart MySQL Service: Apply the changes by restarting the MySQL service:
 ```bash
 sudo systemctl restart mysql
 ```
-![instance](imagessh6.png)
+![instance](images/ssh6.png)
 
 
 ---
@@ -135,7 +135,7 @@ sudo systemctl restart mysql
 ```bash
 mysql -u remote_user -p -h <mysql-server-private-ip>
 ```
-![instance](imagessh7.png)
+![instance](images/ssh6.png)
 
 
 3. Verify the Connection: After connecting, run the following query to check if you're connected to the MySQL server:
@@ -143,7 +143,7 @@ mysql -u remote_user -p -h <mysql-server-private-ip>
 SHOW DATABASES;
 ```
 It should show a list of databases as shown below, This indicates we  have successfully connected to the MySQL server remotely:
-![instance](imagessh7.png)
+![instance](images/ssh7.png)
 
 
 ---
@@ -177,8 +177,9 @@ SELECT * FROM users;
 5. Drop Database:
 ```sql
 DROP DATABASE testdb;
-```
+``
 ![instance](images/ssh8.png)
+
 
 
 ---
