@@ -19,6 +19,7 @@
   - **Example**: 
     - When I run a traceroute command (e.g., `traceroute google.com`), I can see the series of routers my packet passes through to reach Google’s servers, including latency at each step.
 
+
 ---
 
 ### **Basic SQL Commands**
