@@ -85,7 +85,7 @@ To secure your MySQL Server (EC2 instance), we will configure the security group
 ---
 
 
-## Step 5 - Configure MySQL to Allow Remote Connections
+## Step 5 - Configure MySQL to Allow Remote Connections.
 
 By default, MySQL only listens for connections from 127.0.0.1 (localhost). To allow connections from the mysql client
 1. Open the MySQL configuration file:
